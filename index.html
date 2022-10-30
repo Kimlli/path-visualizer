@@ -10,7 +10,7 @@
      <nav class="navbar navbar-inverse">
        <div class="container-fluid">
          <div class="navbar-header">
-           <a id="refreshButton" class="navbar-brand" href="#">Path finder</a>
+           <a id="refreshButton" class="navbar-brand" href="#">Pathfinding Visualizer</a>
          </div>
          <ul class="nav navbar-nav">
            <li class="dropdown">
@@ -39,8 +39,8 @@
                <li id='startStairDemonstration'><a href="#">Simple Stair Pattern</a></li>
              </ul>
            </li>
-           <li id='startButtonAddObject'><a href="#">Add Stop</a></li>
-           <li id='startButtonStart'><button id="actualStartButton" class="btn btn-default navbar-btn" type="button">Visualize</button></li>
+           <li id='startButtonAddObject'><a href="#">Add Bomb</a></li>
+           <li id='startButtonStart'><button id="actualStartButton" class="btn btn-default navbar-btn" type="button">Visualize!</button></li>
            <li id='startButtonClearBoard'><a href="#">Clear Board</a></li>
            <li id='startButtonClearWalls'><a href="#">Clear Walls &amp; Weights</a></li>
            <li id='startButtonClearPath'><a href="#">Clear Path</a></li>
@@ -71,11 +71,11 @@
       <div id='mainText'>
         <ul>
           <li>
-            <div class="start"></div>Starting point</li>
+            <div class="start"></div>Start Node</li>
           <li>
-            <div class="target"></div>Destination</li>
+            <div class="target"></div>Target Node</li>
           <li id="bombLegend">
-            <div class="object"></div>Stop</li>
+            <div class="object"></div>Bomb Node</li>
           <li id="weightLegend">
             <div class="borderlessWeight"></div>Weight Node</li>
           <li>
@@ -88,7 +88,7 @@
             <div class="wall"></div>Wall Node</li>
         </ul>
       </div>
-      
+      <div id="algorithmDescriptor">Pick an algorithm and visualize it!</div>
       <table id='board'/>
     </div>
   </body>
